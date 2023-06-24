@@ -1,11 +1,10 @@
 import './App.css';
-import Nav from './components/Nav';
+import Layout from './components/Layout';
 
 function App() {
   return (
     <div className="App">
-      <h1 className='text-8xl	'>Hello Flip</h1>
-      <Nav />
+      <Layout />
     </div>
   );
 }
