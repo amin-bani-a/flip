@@ -1,11 +1,14 @@
 import React from 'react'
 
 function Header() {
+    const menu = ['HOME', 'ABOUT', 'AWARDS', 'CONTACT', 'EXTERNAL']
     return (
-        <div className='bg-red-600 text-center h-[6.75rem] flex flex-row justify-between items-center'>
-            <div className='bg-yellow-500 w-15 text-5xl m-1 p-'>FLIP TURN</div>
-            <div>
-                <div className='bg-red-700 w-10 m-1 p-1 '>Nav</div>
+        <div className='bg-white text-center h-[6.75rem] flex flex-row justify-between items-center'>
+            <div className=' text-5xl m-3 p-2 min-w-fit cursor-pointer text-gray-500'>FLIP TURN</div>
+            <div className='mr-2'>
+                <div className=' m-1 p-1'>
+                    <ul className='flex flex-row justify-between items-center'>{ menu.map((item) => <li className='px-5 py-3 cursor-pointer hover:bg-teal-200 shadow-[1px_1px_1px_rgba(80,80,80,0.4)]
+'>{ item }</li>) }</ul></div>
             </div>
         </div>
     )
