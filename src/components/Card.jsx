@@ -1,37 +1,13 @@
 import React, { useEffect, useState } from 'react';
 
 function Card(props) {
-    const MyComponent = () => {
-        const [data, setData] = useState(null);
+    return (
+        <div className='p-1 m-2 bg-gray-300 cursor-pointer hover:transform hover:scale-110 transition duration-200 ease-in-out'>
+            <img src={ props.imageSrc } />
+        </div>
 
-        useEffect(() => {
-            const fetchData = async () => {
-                try {
-                    const response = await fetch('https://image.dummyjson.c/200x100');
-                    const json = await response.json();
-                    setData(json);
-                } catch (error) {
-                    console.log('Error fetching data:', error);
-                }
-            };
+    );
+};
 
-            fetchData();
-        }, []);
-
-        return (
-            <div>
-                { data ? (
-                    <ul>
-                        { data.map((item) => (
-                            <li key={ item.id }>{ item.name }</li>
-                        )) }
-                    </ul>
-                ) : (
-                    <p>Loading data...</p>
-                ) }
-            </div>
-        );
-    };
-}
 
 export default Card;

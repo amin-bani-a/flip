@@ -6,7 +6,7 @@ library.add(fab);
 
 function Footer() {
     return (
-        <div className="bg-gray-200 h-16 flex flex-row justify-between items-center w-full px-2.5">
+        <div className="bg-gray-100 h-16 flex flex-row justify-between items-center w-full px-2.5">
             <div className="self-center text-sm text-gray-700">
                 Copyright © 2084 Your Company Name
             </div>

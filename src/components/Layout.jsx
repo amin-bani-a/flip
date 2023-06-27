@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 function Layout() {
     return (
-        <div className=' bg-cyan-200 min-h-full px-20 my-10 flex-col justify-center w-full drop-shadow-lg'>
+        <div className=' bg-gray-100 min-h-full px-10 my-10 flex-col justify-center w-full drop-shadow-lg'>
 
             <Header />
             <Main />
